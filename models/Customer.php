@@ -21,6 +21,7 @@ class Customer
             $this->tipology = null;
             return false;
         }
+        $this->tipology = $target;
         return true;
     }
 }
