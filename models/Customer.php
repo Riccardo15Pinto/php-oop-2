@@ -16,7 +16,7 @@ class Customer
 
     private function setTipology($target)
     {
-        if (!strlen($target)) {
+        if (!$target) {
 
             $this->tipology = null;
             return false;
