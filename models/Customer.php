@@ -2,7 +2,7 @@
 
 class Customer
 {
-    private $tipology;
+    public $tipology;
 
     public function __construct($tipology)
     {
