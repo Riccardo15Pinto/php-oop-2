@@ -12,7 +12,6 @@ class Article extends Customer
     public function __construct($name, $image, $weight, $price, $ingredients, $tipology)
     {
         parent::__construct($tipology);
-        $this->setTipology($tipology);
         $this->setName($name);
         $this->setImage($image);
         $this->setWeight($weight);
@@ -43,12 +42,6 @@ class Article extends Customer
     public function getIngredients()
     {
         return $this->ingredients;
-    }
-
-    private function setTipology($target)
-    {
-        if (!$target instanceof Customer && !strlen($target)) return false;
-        return $target;
     }
 
     private function setName($target)
