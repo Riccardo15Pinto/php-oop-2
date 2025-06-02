@@ -43,7 +43,7 @@ var_dump($store);
 
 
             </li>
-        <? endforeach ?>
+        <?php endforeach ?>
     </ul>
 </body>
 
